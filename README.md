@@ -83,6 +83,11 @@ The project was implemented and tested using Wokwi.
 
 ![ThingSpeak Charts](screenshots/thingspeak-charts.png)
 
+## Student Information
+
+- **Full Name:** Maha Dalaa
+- **University ID:** 12217362
+
 ## Project Status
 
 **Completed and successfully tested.**
