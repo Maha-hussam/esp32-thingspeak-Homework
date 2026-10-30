@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": -22.2, "left": 2.8, "attrs": {} },
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -76.8, "left": -177.56, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -143.7, "left": 119.4, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "bb1:25t.b", "bb1:25t.c", "green", [ "v9.6" ] ],
+    [ "dht1:VCC", "esp:3V3", "red", [ "h-48", "v-67.2", "h-259.35" ] ],
+    [ "dht1:SDA", "esp:15", "green", [ "v0" ] ],
+    [ "dht1:GND", "bb1:tn.12", "black", [ "v0" ] ],
+    [ "bb1:tn.1", "esp:GND.2", "black", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
